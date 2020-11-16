@@ -1,0 +1,9 @@
+D:\levij\source\repos\YoutubeMP3Downloader\YoutubeMP3Downloader\obj\Debug\YoutubeMP3Downloader.csprojAssemblyReference.cache
+D:\levij\source\repos\YoutubeMP3Downloader\YoutubeMP3Downloader\obj\Debug\YoutubeMP3Downloader.Form1.resources
+D:\levij\source\repos\YoutubeMP3Downloader\YoutubeMP3Downloader\obj\Debug\YoutubeMP3Downloader.csproj.GenerateResource.cache
+D:\levij\source\repos\YoutubeMP3Downloader\YoutubeMP3Downloader\bin\Debug\YTDL.exe.config
+D:\levij\source\repos\YoutubeMP3Downloader\YoutubeMP3Downloader\bin\Debug\YTDL.exe
+D:\levij\source\repos\YoutubeMP3Downloader\YoutubeMP3Downloader\bin\Debug\YTDL.pdb
+D:\levij\source\repos\YoutubeMP3Downloader\YoutubeMP3Downloader\obj\Debug\YTDL.Properties.Resources.resources
+D:\levij\source\repos\YoutubeMP3Downloader\YoutubeMP3Downloader\obj\Debug\YTDL.exe
+D:\levij\source\repos\YoutubeMP3Downloader\YoutubeMP3Downloader\obj\Debug\YTDL.pdb

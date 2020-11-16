@@ -1,0 +1,9 @@
+D:\Levi\source\repos\YTDL\YTDL\obj\Debug\YTDL.csprojAssemblyReference.cache
+D:\Levi\source\repos\YTDL\YTDL\obj\Debug\YTDL.Form1.resources
+D:\Levi\source\repos\YTDL\YTDL\obj\Debug\YTDL.Properties.Resources.resources
+D:\Levi\source\repos\YTDL\YTDL\obj\Debug\YTDL.csproj.GenerateResource.cache
+D:\Levi\source\repos\YTDL\YTDL\obj\Debug\YTDL.exe
+D:\Levi\source\repos\YTDL\YTDL\obj\Debug\YTDL.pdb
+D:\Levi\source\repos\YTDL\YTDL\bin\Debug\YTDL.exe.config
+D:\Levi\source\repos\YTDL\YTDL\bin\Debug\YTDL.exe
+D:\Levi\source\repos\YTDL\YTDL\bin\Debug\YTDL.pdb
