@@ -43,47 +43,35 @@ namespace YTDL
                 string data = "";
                 if (!MP4checkBox.Checked)
                 {
-                    data = "--o \"" + pathBox.Text + "\\%(title)s.%(ext)s\" --embed-thumbnail --add-metadata -x --audio-format mp3 " + urlBox.Text;
+                    data = "--o \"" + pathBox.Text + "\\%(title)s.%(ext)s\" --embed-thumbnail --add-metadata -x --audio-format mp3 -4 " + urlBox.Text;
                 }
                 else
                 {
-                    data = "--o \"" + pathBox.Text + "\\%(title)s.%(ext)s\" --add-metadata " + urlBox.Text;
+                    data = "--o \"" + pathBox.Text + "\\%(title)s.%(ext)s\"  --add-metadata -4 " + urlBox.Text;
                 }
 
 
                 Process proc = new Process();
                 proc.StartInfo.UseShellExecute = false;
-                proc.StartInfo.CreateNoWindow = true;
-                proc.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                proc.StartInfo.FileName = "youtube-dl.exe";
-                proc.StartInfo.Arguments = data;
+                if (!showOutputCheckbox.Checked)
+                {
+                    proc.StartInfo.CreateNoWindow = true;
+                    proc.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    proc.StartInfo.FileName = "cmd.exe";
+                    proc.StartInfo.Arguments = "/K youtube-dl.exe --verbose " + data;
+                }
+                else
+                {
+                    proc.StartInfo.FileName = "youtube-dl.exe";
+                    proc.StartInfo.Arguments = data;
+                }
+
                 proc.StartInfo.RedirectStandardError = false;
-                proc.StartInfo.RedirectStandardOutput = true;
+                proc.StartInfo.RedirectStandardOutput = false;
                 proc.Start();
-                proc.BeginOutputReadLine();
-                proc.OutputDataReceived += Proc_OutputDataReceived;
                 proc.WaitForExit();
 
-
-                Invoke(new Action(() =>
-                {
-                    this.Text = "YTDL - Done!";
-                    Process.Start("explorer.exe", @pathBox.Text);
-                    Thread.Sleep(500);
-                    this.Text = "YTDL";
-                }));
             }).Start();
-        }
-
-        private void Proc_OutputDataReceived(object sender, DataReceivedEventArgs e)
-        {
-            if (e.Data != null)
-            {
-                Invoke(new Action(() =>
-                {
-                    this.Text = "YTDL - " + e.Data.ToString();
-                }));
-            }
         }
 
         private void selectPathButton_Click(object sender, EventArgs e)

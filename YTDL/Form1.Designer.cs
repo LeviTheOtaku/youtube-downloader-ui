@@ -34,6 +34,7 @@
             this.selectPathButton = new System.Windows.Forms.Button();
             this.DownloadButton = new System.Windows.Forms.Button();
             this.MP4checkBox = new System.Windows.Forms.CheckBox();
+            this.showOutputCheckbox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // urlBox
@@ -83,12 +84,24 @@
             this.MP4checkBox.Text = "Download as video";
             this.MP4checkBox.UseVisualStyleBackColor = true;
             // 
+            // showOutputCheckbox
+            // 
+            this.showOutputCheckbox.AutoSize = true;
+            this.showOutputCheckbox.ForeColor = System.Drawing.Color.White;
+            this.showOutputCheckbox.Location = new System.Drawing.Point(176, 152);
+            this.showOutputCheckbox.Name = "showOutputCheckbox";
+            this.showOutputCheckbox.Size = new System.Drawing.Size(115, 17);
+            this.showOutputCheckbox.TabIndex = 6;
+            this.showOutputCheckbox.Text = "Show cmd output?";
+            this.showOutputCheckbox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(494, 179);
+            this.Controls.Add(this.showOutputCheckbox);
             this.Controls.Add(this.MP4checkBox);
             this.Controls.Add(this.DownloadButton);
             this.Controls.Add(this.selectPathButton);
@@ -111,6 +124,7 @@
         private System.Windows.Forms.Button selectPathButton;
         private System.Windows.Forms.Button DownloadButton;
         private System.Windows.Forms.CheckBox MP4checkBox;
+        private System.Windows.Forms.CheckBox showOutputCheckbox;
     }
 }
 
